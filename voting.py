@@ -1,3 +1,4 @@
+# Voting System
 # First we ill take input of what nominee ant to keep
 nominee1=input("Enter the name of the first nominee: ")
 nominee2=input("Enter the name of the second nominee: ")
@@ -15,11 +16,11 @@ while True:
         print("Voting session is over!!")
         if nm1_votes>nm2_votes:
             percent=(nm1_votes/no_of_voter)*100  #to calculate the percentage
-            print(nominee1, "has on the election with ",percent," % of votes")
+            print(nominee1, "has won the election with ",percent," % of votes")
             break  #to get rid of infinitr loop
         elif nm2_votes>nm1_votes:
             percent=(nm2_votes/no_of_voter)*100
-            print(nominee2, "has on the election with ",percent," % of votes")
+            print(nominee2, "has won the election with ",percent," % of votes")
             break
         else:
             print("Both have equal number of votes !! Goverment will decide who will rule")
